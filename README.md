@@ -2,7 +2,7 @@ Hi, I'm Anisha Subba
 
 This is the source code for my personal portfolio website, a place to showcase who I am, what I build, and what I'm learning as a BCA student and freelance web developer.
 
-🔗 Live site: anishasubba.vercel.app
+🔗 Live site: https://anishasubba.vercel.app
 
 About this project
 
