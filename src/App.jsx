@@ -36,21 +36,38 @@ function App() {
       card.style.setProperty('--glow', glow.toFixed(2))
     }
 
+    const listeners = new Map()
+
     interactiveCards.forEach((card) => {
-      card.addEventListener('pointermove', handlePointerMove)
-      card.addEventListener('pointerleave', () => resetCard(card))
-      card.addEventListener('pointercancel', () => resetCard(card))
-      card.addEventListener('touchstart', () => {
+      const handlePointerLeave = () => resetCard(card)
+      const handlePointerCancel = () => resetCard(card)
+      const handleTouchStart = () => {
         card.style.setProperty('--lift', '-3px')
+      }
+      const handleTouchEnd = () => resetCard(card)
+
+      card.addEventListener('pointermove', handlePointerMove)
+      card.addEventListener('pointerleave', handlePointerLeave)
+      card.addEventListener('pointercancel', handlePointerCancel)
+      card.addEventListener('touchstart', handleTouchStart)
+      card.addEventListener('touchend', handleTouchEnd)
+      listeners.set(card, {
+        handlePointerLeave,
+        handlePointerCancel,
+        handleTouchStart,
+        handleTouchEnd,
       })
-      card.addEventListener('touchend', () => resetCard(card))
     })
 
     return () => {
       interactiveCards.forEach((card) => {
+        const cardListeners = listeners.get(card)
+
         card.removeEventListener('pointermove', handlePointerMove)
-        card.removeEventListener('pointerleave', () => resetCard(card))
-        card.removeEventListener('pointercancel', () => resetCard(card))
+        card.removeEventListener('pointerleave', cardListeners.handlePointerLeave)
+        card.removeEventListener('pointercancel', cardListeners.handlePointerCancel)
+        card.removeEventListener('touchstart', cardListeners.handleTouchStart)
+        card.removeEventListener('touchend', cardListeners.handleTouchEnd)
       })
     }
   }, [])
