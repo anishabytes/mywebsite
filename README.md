@@ -1,16 +1,41 @@
-# React + Vite
+Hi, I'm Anisha Subba
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is the source code for my personal portfolio website, a place to showcase who I am, what I build, and what I'm learning as a BCA student and freelance web developer.
 
-Currently, two official plugins are available:
+🔗 Live site: https://anishasubba.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+About this project
 
-## React Compiler
+I'm Anisha,
+a BCA student based in Dehradun, India, with hands-on freelance experience building websites for local businesses. I work across the stack with React, Node.js, Django, and MySQL, and I've been experimenting with AI-assisted development tools like Claude and Cursor to build faster and smarter.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio is where all of that comes together: my skills, my freelance work, and a few of the projects I'm proud of.
 
-## Expanding the Oxlint configuration
+What's inside
+About — a quick intro to who I am and what I do
+Skills — the tools and languages I work with day to day
+Experience — freelance web development work for local businesses
+Projects — AI-assisted content/growth work and market research projects
+Contact — the best way to reach me
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Built with
+
+⚛️ React + Vite
+🎨 Custom-designed UI
+☁️ Deployed on Vercel
+
+Running it locally : 
+
+bash
+git clone https://github.com/anishabytes/mywebsite.git
+cd mywebsite
+npm install
+npm run dev
+
+The site will be running at http://localhost:5173.
+
+Get in touch
+
+📧 anishasubba783@gmail.com
+
+⭐ If you like what you see, feel free to star the repo!
