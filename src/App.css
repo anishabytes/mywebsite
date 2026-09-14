@@ -631,6 +631,52 @@ h1 {
   color: rgba(45, 45, 45, 0.7);
 }
 
+.socials-block {
+  grid-column: 1 / -1;
+  padding-top: 4px;
+  border-top: 2px dashed rgba(45, 45, 45, 0.2);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
+.contact-card a.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  border: 2px solid transparent;
+  border-radius: 999px 16px / 16px 999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.contact-card a.social-link:hover,
+.contact-card a.social-link:focus-visible {
+  color: var(--ink);
+  background: var(--yellow);
+  border-color: var(--ink);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.contact-card a.social-link:active {
+  background: var(--redSoft);
+  transform: translateY(0);
+}
+
+.social-icon {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+  fill: currentColor;
+}
+
 @media (hover: none), (pointer: coarse) {
   .hero-shell,
   .card-surface,

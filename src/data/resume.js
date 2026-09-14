@@ -3,7 +3,13 @@ export const resume = {
     name: 'Anisha Subba',
     title: 'BCA Student | Web Developer | Growth & Product Enthusiast',
     location: 'Dehradun, India',
-    email: 'anishasubba0811@gmail.com',
+    email: 'anishasubba783@gmail.com',
+    socials: {
+      GitHub: 'https://github.com/anishabytes',
+      LinkedIn: 'https://www.linkedin.com/in/anisha-subba-ba16b1401',
+      Instagram: 'https://www.instagram.com/anishabytes',
+      Twitter: 'https://twitter.com/anishabytes',
+    },
   },
   summary:
     'Motivated BCA student with hands-on freelance experience developing websites for local businesses. Proficient in fullstack web development using HTML, CSS, JavaScript, React, Node.js, Django, Python, MySQL, and REST APIs. Experienced with AI-assisted development tools including Claude, Cursor AI, and Windsurf. Strong interest in product growth, operations, and business development with effective communication and team coordination skills.',
